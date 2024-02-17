@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var content = document.querySelector('.content');
+    var expandingSection = document.getElementById('expanding-section');
     window.addEventListener('scroll', function() {
-        if (isInViewport(content)) {
-            content.classList.add('show');
+        if (isInViewport(expandingSection)) {
+            expandingSection.classList.add('show');
         }
     });
 });
