@@ -27,18 +27,17 @@ header {
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
     .main-content .feature {
         width: calc(50% - 20px);
     }
 }
 
-@media (max-width: 480px) {
+@media(max-width: 480px) {
     .main-content .feature {
         width: 100%;
     }
 }
-
 
 .container {
     max-width: 1200px;
