@@ -1,34 +1,52 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.landing-page {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth; /* Smooth scrolling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.section {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s;
+}
+
+section:nth-child(even) {
     background-color: #f0f0f0;
-    opacity: 0; /* Initially hide sections */
-    transform: translateY(20px); /* Move sections down */
 }
 
-.section.animated {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.section:nth-child(even) {
-    background-color: #e0e0e0;
-}
-
-.section.active {
-    opacity: 1;
-    transform: translateY(0);
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
