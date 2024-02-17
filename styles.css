@@ -1,80 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.landing-page {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
-.main-content {
+.section {
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.main-content .feature {
-    width: calc(33.33% - 20px);
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-@media(max-width: 768px) {
-    .main-content .feature {
-        width: calc(50% - 20px);
-    }
-}
-
-@media(max-width: 480px) {
-    .main-content .feature {
-        width: 100%;
-    }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.content {
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    min-height: 500px; /* Ensure some scrollable content */
-    opacity: 0; /* Initially hide the content */
-    transform: translateY(20px); /* Move the content down */
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.expanding-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f0f0f0;
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    max-height: 0;
 }
 
-.expanding-section.show {
-    max-height: 500px; /* Set to the maximum height you want the section to expand to */
+.section:nth-child(even) {
+    background-color: #e0e0e0;
 }
