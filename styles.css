@@ -63,3 +63,18 @@ header {
     text-align: center;
     margin-top: 20px;
 }
+
+.expanding-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.expanding-section.show {
+    max-height: 500px; /* Set to the maximum height you want the section to expand to */
+}
