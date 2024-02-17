@@ -3,73 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px 0;
-        }
-
-        .main-content .feature {
-            width: calc(33.33% - 20px);
-            background-color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .main-content .feature {
-                width: calc(50% - 20px);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .main-content .feature {
-                width: 100%;
-            }
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Responsive Landing Page</h1>
-        <p>Welcome to our website</p>
+        <h1>Scroll Animation</h1>
     </header>
 
     <div class="container">
-        <div class="main-content">
+        <div class="content">
+            <div class="main-content">
             <div class="feature">
                 <h2>Feature 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -83,10 +27,13 @@
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Responsive Landing Page. All rights reserved.</p>
+        <p>&copy; 2024 Scroll Animation. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
