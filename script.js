@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
             content.classList.add('show');
         }
     });
-
-    function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
-        var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-        return (
-            (rect.top <= windowHeight)
-        );
-    }
 });
+
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+    return (
+        (rect.top <= windowHeight)
+    );
+}
