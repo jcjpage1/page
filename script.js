@@ -1,23 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var sections = document.querySelectorAll('.section');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
-        var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-        return (rect.top <= windowHeight);
-    }
-
-    function showSections() {
-        sections.forEach(function(section) {
-            if (isInViewport(section)) {
-                section.classList.add('active');
-            }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
-    }
-
-    // Show sections when the page loads
-    showSections();
-
-    // Show sections when scrolling
-    window.addEventListener('scroll', showSections);
+    });
 });
