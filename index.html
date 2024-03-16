@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마케팅 더딥</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://webfontworld.github.io/SCoreDream/SCoreDream.css"
+      rel="stylesheet"
+    />
+    <script src="/src/js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <section id="main_section">
+      <div>
+        <p
+          class="p36"
+          style="
+            color: white;
+            letter-spacing: -1px;
+            margin-bottom: 0;
+            margin-top: 0;
+          "
+        >
+          <span style="color: #03c95b">노출</span>
+          <span style="font-weight: 100">X</span>
+          <span style="color: #03c95b">설득</span>
+          <span style="font-weight: 100">X</span> 품질
+          <span style="font-weight: 100">=</span> 매출
+        </p>
+        <p
+          class="p52"
+          style="
+            color: white;
+            letter-spacing: -1px;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 20px;
+          "
+        >
+          광고가 아닌, <span style="font-weight: 100">마케팅</span>
+        </p>
+      </div>
+      <div>
+        <a href="#"><span></span></a>
+      </div>
+    </section>
+
+    <section id="section1" class="section">
+      <img src="/src/img/01.jpg" alt="Placeholder" />
+    </section>
+
+    <section id="section2" class="section">
+      <img src="/src/img/02.jpg" alt="Placeholder" />
+    </section>
+
+    <section id="section3" class="section">
+      <img src="/src/img/03.jpg" alt="Placeholder" />
+    </section>
+
+    <div id="footer"></div>
+
+    <style>
+      @media only screen and (max-width: 5000px) {
+        .p36 {
+          font-size: 36px;
+        }
+        .p52 {
+          font-size: 52px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .p36 {
+          font-size: 24px;
+        }
+        .p52 {
+          font-size: 36px;
+        }
+      }
+    </style>
+    <script>
+      $("#header").load("/src/components/header.html");
+      $("#footer").load("/src/components/footer.html");
+    </script>
+    <script>
+      function toggleAnimation() {
+        const arrow = document.querySelector(".arrow");
+        arrow.classList.toggle("paused");
+      }
+    </script>
+    <script src="/src/js/script.js" defer></script>
+  </body>
+</html>
