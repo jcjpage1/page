@@ -52,6 +52,7 @@ section#main_section {
   text-align: center;
   display: flex;
   background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 #background-video {
