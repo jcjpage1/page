@@ -18,8 +18,35 @@
 
     <!-- 모바일 사이즈일 때 메뉴 아이콘 -->
     <div id="mobile_menu" style="display: none">
-      <!-- 메뉴 아이콘 디자인 -->
-      메뉴
+      <img id="menu_icon" src="/src/img/menu_white.png" style="width: 28px" />
+    </div>
+    <div id="overlay"></div>
+    <div id="new_window">
+      <div style="display: flex; justify-content: space-between">
+        <div style="padding: 20px">
+          <img src="/src/img/logo_black.png" style="width: 120px" />
+        </div>
+        <div style="padding: 20px; align-self: center; margin-top: 6px">
+          <img
+            id="close_button"
+            src="/src/img/close_button.png"
+            style="width: 24px"
+          />
+        </div>
+      </div>
+      <div>
+        <ul id="main_menu">
+          <li>
+            <a href="#">블로그</a>
+            <li class="submenu"><a href="/src/pages/blog_page.html">블로그 Item 1</a></li>
+            <li class="submenu"><a href="/src/pages/blog_page.html">블로그 Item 2</a></li></li>
+          <li>
+            <a href="#">플레이스</a>
+            <li class="submenu"><a href="/src/pages/place_page.html">플레이스 Item 1</a></li>
+            <li class="submenu"><a href="/src/pages/place_page.html">플레이스 Item 2</a></li>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- 메뉴 목록 -->
@@ -42,6 +69,36 @@
   </div>
   <div style="width: 10%"></div>
 </header>
+
+<script>
+  // Function to open the new window with animation
+  function openNewWindow() {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("new_window").classList.add("show");
+  }
+
+  // Function to close the new window with animation
+  function closeNewWindow() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("new_window").classList.remove("show");
+  }
+
+  // Event listener for clicking the menu icon
+  document.getElementById("menu_icon").addEventListener("click", function () {
+    openNewWindow();
+  });
+
+  // Event listener for clicking the overlay (to close the new window)
+  document.getElementById("overlay").addEventListener("click", function () {
+    closeNewWindow();
+  });
+
+  document
+    .getElementById("close_button")
+    .addEventListener("click", function () {
+      closeNewWindow();
+    });
+</script>
 
 <script>
   window.onload = function () {

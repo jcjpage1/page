@@ -38,6 +38,71 @@ nav ul li a {
   text-decoration: none;
 }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Initially hide the overlay */
+}
+
+#new_window {
+  /* Initial styles for the new window */
+  position: fixed;
+  top: 50%;
+  left: 100%; /* Initial position off-screen to the right */
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 100%; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s 0.5s, left 0.5s; /* Transition for opacity, visibility, and left position */
+}
+
+#new_window.show {
+  /* Styles for showing the new window */
+  left: 50%; /* Move to the center */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0s, left 0.5s; /* Transition for opacity and visibility */
+}
+
+/* Main Menu */
+#main_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main_menu li {
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#main_menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+/* Hover effect for main menu items */
+#main_menu li:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Submenu */
+.submenu {
+  position: relative; /* Needed for absolute positioning of submenu */
+  background-color: #f0f0f0;
+}
+
+.submenu a {
+  font-size: 16px !important;
+}
+
 section {
   display: block;
   justify-content: center;
@@ -62,8 +127,6 @@ section#main_section {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-
-  /* opacity: 0.4; */
 }
 
 section#main_section2 {
