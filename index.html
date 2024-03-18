@@ -16,7 +16,12 @@
     <div id="header"></div>
 
     <section id="main_section">
-      <div>
+      <video id="background-video" autoplay loop muted>
+        <source src="/src/img/main/main_video.mp4" type="video/mp4" />
+        <!-- Add additional source elements for other video formats if needed -->
+      </video>
+
+      <div style="position: absolute; z-index: 1">
         <p
           class="p36"
           style="
@@ -206,15 +211,10 @@
       </div>
       <div
         id="main_section2_div"
-        style="
-          width: 80%;
-          background-color: white;
-          margin: 0 auto;
-          padding: 20px 0;
-        "
+        style="background-color: white; margin: 0 auto; padding: 20px 0"
       >
-        <div style="display: flex; margin: 20px 30px">
-          <div style="margin-right: 12px; margin-top: 12px">
+        <div style="display: flex; margin: 20px 30px; padding-top: 14px">
+          <div style="margin-right: 12px; margin-top: 16px">
             <span
               style="
                 background-color: #03c95b;
@@ -244,7 +244,7 @@
           </div>
         </div>
         <div
-          style="width: 80%; border-bottom: 1px dotted #999; margin: 0 auto"
+          style="width: 84%; border-bottom: 1px dotted #999; margin: 0 auto"
         ></div>
         <div style="display: flex; margin: 20px 30px">
           <div style="margin-right: 12px; margin-top: 12px">
@@ -278,7 +278,7 @@
           </div>
         </div>
         <div
-          style="width: 80%; border-bottom: 1px dotted #999; margin: 0 auto"
+          style="width: 84%; border-bottom: 1px dotted #999; margin: 0 auto"
         ></div>
         <div style="display: flex; margin: 20px 30px">
           <div style="margin-right: 12px; margin-top: 12px">
@@ -487,6 +487,7 @@
         }
         #main_section2_div {
           height: 55vh;
+          width: 65%;
         }
       }
 
@@ -501,6 +502,7 @@
           height: 100vh;
         }
         #main_section2_div {
+          width: 80%;
           height: 72vh !important;
           margin: 20px auto !important;
           padding: 0 !important;

@@ -44,6 +44,30 @@
 </header>
 
 <script>
+  window.onload = function () {
+    var mobileMenu = document.getElementById("mobile_menu");
+    var pcMenu = document.getElementById("pc_menu");
+    var pcLogo = document.getElementById("pc_logo");
+    var isMobile = false;
+
+    if (window.innerWidth <= 768) {
+      isMobile = true;
+    }
+
+    console.log("isMobile", isMobile);
+    if (isMobile) {
+      mobileMenu.style.display = "block";
+      pcMenu.style.display = "none";
+      pcLogo.style.display = "none";
+    } else {
+      mobileMenu.style.display = "none";
+      pcMenu.style.display = "block";
+      pcLogo.style.display = "block";
+    }
+  };
+</script>
+
+<script>
   window.addEventListener("scroll", function () {
     var header = document.getElementById("header-background");
 
