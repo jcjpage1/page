@@ -105,13 +105,8 @@
     var mobileMenu = document.getElementById("mobile_menu");
     var pcMenu = document.getElementById("pc_menu");
     var pcLogo = document.getElementById("pc_logo");
-    var isMobile = false;
 
     if (window.innerWidth <= 584) {
-      isMobile = true;
-    }
-
-    if (isMobile) {
       mobileMenu.style.display = "block";
       pcMenu.style.display = "none";
       pcLogo.style.display = "none";
