@@ -1,4 +1,4 @@
-<header id="header-background">
+<header id="header-background" style="color: black;">
   <div style="width: 10%"></div>
   <div
     style="
@@ -24,7 +24,7 @@
     <div id="new_window">
       <div style="display: flex; justify-content: space-between">
         <div style="padding: 20px; margin-top: 20px;">
-          <img src="/src/img/logo_black.png" style="width: 120px" />
+          <a href="/index.html"><img src="/src/img/logo_black.png" style="width: 120px" /></a>
         </div>
         <div style="padding: 20px; align-self: center; margin-top: 26px">
           <img
@@ -38,12 +38,12 @@
         <ul id="main_menu">
           <li>
             <a href="#">블로그</a>
-            <li class="submenu"><a href="/src/pages/blog_page.html">블로그 Item 1</a></li>
-            <li class="submenu"><a href="/src/pages/blog_page.html">블로그 Item 2</a></li></li>
+            <li class="submenu"><a href="/src/pages/blog_deep_page.html">딥블단</a></li>
+            <li class="submenu"><a href="/src/pages/blog_brand_page.html">브랜드 블로그</a></li></li>
           <li>
             <a href="#">플레이스</a>
-            <li class="submenu"><a href="/src/pages/place_page.html">플레이스 Item 1</a></li>
-            <li class="submenu"><a href="/src/pages/place_page.html">플레이스 Item 2</a></li>
+            <li class="submenu"><a href="/src/pages/place_seo_page.html">세팅&최적화</a></li>
+            <li class="submenu"><a href="/src/pages/place_exposure_page.html">상위노출</a></li>
           </li>
         </ul>
       </div>
@@ -52,8 +52,8 @@
     <!-- 메뉴 목록 -->
     <nav id="pc_menu" style="display: none">
       <ul>
-        <li><a href="/src/pages/blog_page.html">블로그</a></li>
-        <li><a href="/src/pages/place_page.html">플레이스</a></li>
+        <li><a href="/src/pages/blog_deep_page.html">블로그</a></li>
+        <li><a href="/src/pages/place_seo_page.html">플레이스</a></li>
         <li
           style="
             border-radius: 16px;
@@ -62,7 +62,7 @@
             background-color: #03c95b;
           "
         >
-          <a href="/src/pages/place_page.html">문의하기</a>
+          <a href="/src/pages/contact.html">문의하기</a>
         </li>
       </ul>
     </nav>
@@ -101,17 +101,16 @@
 </script>
 
 <script>
-  window.onload = function () {
+  window.addEventListener("load", function () {
     var mobileMenu = document.getElementById("mobile_menu");
     var pcMenu = document.getElementById("pc_menu");
     var pcLogo = document.getElementById("pc_logo");
     var isMobile = false;
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 584) {
       isMobile = true;
     }
 
-    console.log("isMobile", isMobile);
     if (isMobile) {
       mobileMenu.style.display = "block";
       pcMenu.style.display = "none";
@@ -121,13 +120,12 @@
       pcMenu.style.display = "block";
       pcLogo.style.display = "block";
     }
-  };
+  });
 </script>
 
 <script>
   window.addEventListener("scroll", function () {
     var header = document.getElementById("header-background");
-
     if (window.scrollY > 91) {
       header.style.backgroundColor = "black";
     } else {
