@@ -238,7 +238,7 @@ section#main_section2 {
     align-items: center;
     font-size: 16px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
   }
   .radius-text {
@@ -261,6 +261,9 @@ section#main_section2 {
   }
   .p28 {
     font-size: 22px;
+  }
+  .p24 {
+    font-size: 20px;
   }
   .p22 {
     font-size: 16px;
@@ -299,14 +302,15 @@ section#main_section2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 26px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
   }
   .radius-text {
     display: flex;
-    width: 65%;
+    width: 45%;
+    padding: 10px 0;
     margin: 0 auto;
     background-color: #ededed;
     border-radius: 48px;
@@ -324,6 +328,9 @@ section#main_section2 {
   }
   .p28 {
     font-size: 28px;
+  }
+  .p24 {
+    font-size: 24px;
   }
   .p22 {
     font-size: 22px;
