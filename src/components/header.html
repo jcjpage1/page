@@ -8,7 +8,7 @@
       align-items: center;
     "
   >
-    <a id="pc_logo" href="/index.html" style="display: none">
+    <a id="pc_logo" href="/index.html" >
       <img
         src="/src/img/logo_white.png"
         alt="marketing thedeep logo"
@@ -17,7 +17,7 @@
     </a>
 
     <!-- 모바일 사이즈일 때 메뉴 아이콘 -->
-    <div id="mobile_menu" style="display: none">
+    <div id="mobile_menu">
       <img id="menu_icon" src="/src/img/menu_white.png" style="width: 28px" />
     </div>
     <div id="overlay"></div>
@@ -50,7 +50,7 @@
     </div>
 
     <!-- 메뉴 목록 -->
-    <nav id="pc_menu" style="display: none">
+    <nav id="pc_menu">
       <ul>
         <li><a href="/src/pages/blog_deep_page.html">블로그</a></li>
         <li><a href="/src/pages/place_seo_page.html">플레이스</a></li>
@@ -100,7 +100,7 @@
     });
 </script>
 
-<script>
+<!-- <script>
   window.addEventListener("load", function () {
     var mobileMenu = document.getElementById("mobile_menu");
     var pcMenu = document.getElementById("pc_menu");
@@ -116,7 +116,7 @@
       pcLogo.style.display = "block";
     }
   });
-</script>
+</script> -->
 
 <script>
   window.addEventListener("scroll", function () {

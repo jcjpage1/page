@@ -126,7 +126,7 @@ section#sub_section {
 }
 
 section#main_footer {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background-image: url("/src/img/main/main_background_3.png");
   background-size: cover;
@@ -169,9 +169,9 @@ section#main_section2 {
 }
 
 .text-overlay {
-  position: absolute;
-  top: 7%;
-  left: 24%;
+  /* position: absolute; */
+  /* top: 7%;
+  left: 24%; */
   /* transform: translate(-50%, -50%); */
   /* background-color: rgba(0, 0, 0, 0.5);  */
   color: white;
@@ -183,6 +183,30 @@ section#main_section2 {
   width: 48%; /* For PC, two boxes per row */
   margin-bottom: 20px;
   box-sizing: border-box;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+#pc_menu {
+  display: block;
+}
+
+#pc_logo {
+  display: block;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 584px) {
+  #mobile_menu {
+    display: block;
+  }
+
+  #pc_menu,
+  #pc_logo {
+    display: none;
+  }
 }
 
 /* For mobile devices */
@@ -431,16 +455,6 @@ a span {
   src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff2)
       format("woff2"),
     url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream8.woff)
-      format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "SCoreDream";
-  font-weight: 900;
-  font-style: normal;
-  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream9.woff)
       format("woff");
   font-display: swap;
 }
