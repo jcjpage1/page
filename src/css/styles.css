@@ -30,7 +30,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 nav ul li a {
@@ -170,8 +170,8 @@ section#main_section2 {
 
 .text-overlay {
   position: absolute;
-  top: 10%;
-  left: 14%;
+  top: 7%;
+  left: 24%;
   /* transform: translate(-50%, -50%); */
   /* background-color: rgba(0, 0, 0, 0.5);  */
   color: white;
