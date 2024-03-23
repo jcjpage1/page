@@ -109,6 +109,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #green-bg .box:first-child {
+    margin-bottom: 40px;
+  }
   #reasons .list-number {
     width: 30px;
     height: 30px;
