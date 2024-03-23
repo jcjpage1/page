@@ -112,12 +112,18 @@
   #green-bg .box:first-child {
     margin-bottom: 40px;
   }
+  #reasons .list-top {
+    flex-direction: column;
+  }
   #reasons .list-number {
     width: 30px;
     height: 30px;
     margin-top: -2px;
     margin-right: 15px;
     font-size: 15px;
+  }
+  #reasons .list-title {
+    margin-top: 20px;
   }
   #reasons .list-text {
     margin-left: 0;
