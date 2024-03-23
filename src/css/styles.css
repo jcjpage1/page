@@ -316,6 +316,10 @@ section#main_section2 {
   letter-spacing: -0.5px;
 }
 
+.show-br-on-mobile br {
+  display: none;
+}
+
 .p52 {
   font-size: 52px;
 }
@@ -468,6 +472,9 @@ section#main_section2 {
   }
   .knowhow-box {
     height: 230px;
+  }
+  .show-br-on-mobile br {
+    display: block;
   }
   .p52 {
     font-size: 36px;
