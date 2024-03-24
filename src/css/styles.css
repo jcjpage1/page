@@ -314,14 +314,19 @@ section#main_section2 {
   align-items: center;
   text-align: center;
 }
-
 .title-box p {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
-
 .show-br-on-mobile br {
   display: none;
+}
+
+#reviews .box {
+  width: 32%;
+}
+#reviews .image-container img {
+  width: 100%;
 }
 
 .p52 {
@@ -426,10 +431,14 @@ section#main_section2 {
   }
   #mobile_menu {
     display: block;
+    margin-right: 10px;
   }
   #pc_menu,
   #pc_logo {
     display: none;
+  }
+  #reviews .box {
+    width: 100%;
   }
   .p36 {
     font-size: 25px;
@@ -442,10 +451,8 @@ section#main_section2 {
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 600px) {
-  #mobile_menu {
-    margin-right: -20px;
-  }
   .box {
     width: 100%; /* For mobile, one box per row */
   }
