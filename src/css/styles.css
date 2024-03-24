@@ -153,6 +153,11 @@ section#main_footer {
   z-index: -1;
 }
 
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 section#main_section2 {
   height: calc(100vh - 91px);
   background-image: url("/src/img/main/main_background_2.png");
@@ -445,6 +450,9 @@ section#main_section2 {
   .box {
     width: 100%; /* For mobile, one box per row */
   }
+  #kakaotalk-channels .box:first-child {
+    margin-bottom: 20px;
+  }
   .title-box {
     text-align: center;
   }
@@ -525,7 +533,11 @@ section#main_section2 {
     width: 80%;
   }
 }
-
+@media only screen and (max-width: 374px) {
+  .subtitle_sm.p22 {
+    font-size: 15.9px;
+  }
+}
 /* animation */
 a span {
   position: absolute;
