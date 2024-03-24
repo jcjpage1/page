@@ -1,5 +1,5 @@
 <header id="header-background" style="color: black;">
-  <div style="width: 17.5%"></div>
+  <div style="width: 13%"></div>
   <div
   class="container"
     style="
@@ -18,7 +18,12 @@
 
     <!-- 모바일 사이즈일 때 메뉴 아이콘 -->
     <div id="mobile_menu">
-      <img id="menu_icon" src="/src/img/menu_white.png" style="width: 28px" />
+      <div style="display: flex;
+      justify-content: space-between;
+      align-items: center;">
+        <img id="logo" src="/src/img/logo_white.png" style="width: 100px" />
+        <img id="menu_icon" src="/src/img/menu_white.png" style="width: 28px" />
+      </div>
     </div>
     <div id="overlay"></div>
     <div id="new_window">
@@ -40,6 +45,7 @@
             <a href="#">블로그</a>
             <li class="submenu"><a href="/src/pages/blog_deep_page.html">딥블단</a></li>
             <li class="submenu"><a href="/src/pages/blog_brand_page.html">브랜드 블로그</a></li>
+          </li>
           <li>
             <a href="#">플레이스</a>
             <li class="submenu"><a href="/src/pages/place_seo_page.html">세팅&최적화</a></li>
@@ -68,7 +74,7 @@
       </ul>
     </nav>
   </div>
-  <div style="width: 17.5%"></div>
+  <div style="width: 13%"></div>
 </header>
 
 <script>

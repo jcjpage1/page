@@ -273,8 +273,7 @@ section#main_section2 {
 
 #mobile_menu {
   display: none;
-  margin-left: auto;
-  margin-right: 10px;
+  width: 100%;
 }
 #pc_menu {
   display: block;
