@@ -44,9 +44,6 @@ nav ul li a {
 .padding {
   padding: 100px 0;
 }
-.padding-x {
-  padding: 0 20vw;
-}
 
 #overlay {
   position: fixed;
@@ -170,11 +167,6 @@ section#main_footer {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-}
-
-*::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
 }
 
 section#main_section2 {
@@ -451,9 +443,6 @@ section#main_section2 {
 }
 
 @media screen and (max-width: 750px) {
-  .padding-x {
-    padding: 0;
-  }
   #mobile_menu {
     display: block;
   }
@@ -480,9 +469,6 @@ section#main_section2 {
 @media only screen and (max-width: 600px) {
   .box {
     width: 100%; /* For mobile, one box per row */
-  }
-  #kakaotalk-channels .box:first-child {
-    margin-bottom: 20px;
   }
   .title-box {
     text-align: center;
@@ -557,15 +543,6 @@ section#main_section2 {
 }
 
 @media only screen and (max-width: 480px) {
-  section#main_section2 {
-    height: 102vh;
-  }
-  #main_section2_div {
-    width: 80%;
-    height: 75vh !important;
-    margin: 20px auto !important;
-    padding: 0 !important;
-  }
   #main_footer_div {
     width: 80%;
   }
