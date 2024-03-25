@@ -142,6 +142,22 @@ section#main_footer {
   overflow: hidden;
   margin-bottom: -1px;
 }
+#main_footer_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#main_footer_div .button {
+  padding: 10px 50px;
+  margin-top: 40px;
+  border-radius: 36px;
+  background-color: white;
+}
+#main_footer_div a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
 
 #background-video {
   position: absolute;
@@ -282,22 +298,6 @@ section#main_section2 {
   display: block;
 }
 
-#main_footer_div {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-#main_footer_div .button {
-  border-radius: 36px;
-  padding: 10px 30px;
-  background-color: white;
-}
-#main_footer_div a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
 #tabs {
   display: flex;
   width: 100%;
@@ -367,12 +367,6 @@ section#main_section2 {
   }
   #main_footer_div {
     width: 65%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  #main_footer_div .button {
-    margin-top: 40px;
   }
 }
 
@@ -423,6 +417,11 @@ section#main_section2 {
   #knowhow .box {
     width: 100%;
   }
+  #main_footer_div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -431,7 +430,6 @@ section#main_section2 {
   }
   #mobile_menu {
     display: block;
-    margin-right: 10px;
   }
   #pc_menu,
   #pc_logo {
@@ -440,6 +438,7 @@ section#main_section2 {
   #reviews .box {
     width: 100%;
   }
+
   .p36 {
     font-size: 25px;
   }
