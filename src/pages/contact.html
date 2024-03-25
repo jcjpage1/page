@@ -31,7 +31,7 @@
       name="keywords"
       content="네이버, 브랜드 블로그, 스마트 플레이스, 상위노출, 건바이, 월보장, 기자단, 마케팅 강의, 컨설팅, 온라인 광고, 온라인 마케팅, "
     />
-    <title>마케팅 더딥</title>
+    <title>마케팅더딥</title>
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon" />
     <link
@@ -74,12 +74,9 @@
     </section>
 
     <section id="kakaotalk-channels" class="padding-x">
-      <div
-        class="container"
-        style="margin-bottom: 0; padding-bottom: 60px; margin-top: 100px"
-      >
+      <div class="container" style="padding-bottom: 60px; margin-top: 100px">
         <div class="box">
-          <div class="image-container">
+          <div class="image-container has-divider">
             <a href="https://pf.kakao.com/_mxnAfG/">
               <img
                 src="/src/img/contact/redirect.png"
@@ -87,15 +84,8 @@
                 style="width: 100%"
               />
             </a>
-            <p class="p22" style="text-align: center; margin-top: 20px">
-              모바일의 경우<br />위 버튼을 클릭하세요
-            </p>
           </div>
         </div>
-        <div
-          id="divide"
-          style="width: 0.5px; border: 0.5px solid #999; height: 35vh"
-        ></div>
         <div class="box">
           <div class="image-container">
             <img
@@ -103,6 +93,21 @@
               alt="marketing thedeep section 5-1"
               style="width: 100%"
             />
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 60px; margin-top: -60px">
+        <div class="box">
+          <div class="image-container">
+            <p class="p22" style="text-align: center; margin-top: 20px">
+              모바일의 경우<br />위 버튼을 클릭하세요
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image-container">
             <p class="p22" style="text-align: center; margin-top: 20px">
               휴대폰 카메라로 위 QR코드<br />촬용하면 채널 연결
             </p>
@@ -203,6 +208,18 @@
         }
         #quotation {
           left: 30%;
+        }
+        .image-container.has-divider {
+          position: relative;
+        }
+        .image-container.has-divider a::after {
+          content: "";
+          position: absolute;
+          right: -25%;
+          top: 15%;
+          bottom: 15%;
+          width: 1px;
+          background-color: #9999;
         }
       }
 

@@ -45,7 +45,7 @@ nav ul li a {
   padding: 100px 0;
 }
 .padding-x {
-  padding: 0 150px;
+  padding: 0 20vw;
 }
 
 #overlay {
@@ -87,6 +87,9 @@ nav ul li a {
 #main_menu li {
   padding: 20px 0;
   border-bottom: 1px solid #f0f0f0;
+}
+#main_menu li:last-child {
+  border-bottom: none;
 }
 #main_menu li a {
   text-decoration: none;
@@ -270,10 +273,11 @@ section#main_section2 {
 .process-box .p16 {
   font-weight: 500;
   height: 35px;
+  padding-right: 15px;
 }
 .knowhow-box {
-  padding: 30px;
   height: 320px;
+  padding: 30px;
   background-color: white;
   border-left: 10px solid #6ab36a;
   display: flex;
@@ -283,8 +287,18 @@ section#main_section2 {
 .knowhow-box:first-child {
   margin-bottom: 20px;
 }
-.knowhow-box .p22 {
+.knowhow-box .p28 {
   margin-bottom: 20px;
+  color: #6ab36a;
+  font-weight: 600;
+}
+.knowhow-box .p20 {
+  font-weight: 500;
+  line-height: 15px;
+}
+.knowhow-box .p20:last-child {
+  margin-top: 20px;
+  line-height: normal;
 }
 
 #mobile_menu {
@@ -379,6 +393,19 @@ section#main_section2 {
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .knowhow-box .p28 {
+    font-size: 26px;
+  }
+  .knowhow-box .p20 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #knowhow .box {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1120px) {
   .process-box .p20 {
     height: 45px;
@@ -413,10 +440,9 @@ section#main_section2 {
   }
   .process-box .p16 {
     height: 35px;
+    padding-right: 5px;
   }
-  #knowhow .box {
-    width: 100%;
-  }
+
   #main_footer_div {
     text-align: center;
     flex-direction: column;
@@ -444,7 +470,7 @@ section#main_section2 {
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 685px) {
   .process-box .p16 {
     height: 55px;
   }
@@ -484,7 +510,13 @@ section#main_section2 {
     height: 25px;
   }
   .knowhow-box {
-    height: 230px;
+    height: 280px;
+  }
+  .knowhow-box .p28 {
+    font-size: 22px;
+  }
+  .knowhow-box .p20 {
+    font-size: 14px;
   }
   .show-br-on-mobile br {
     display: block;
@@ -538,9 +570,19 @@ section#main_section2 {
     width: 80%;
   }
 }
+@media only screen and (max-width: 414px) {
+  .process-box .p16 {
+    height: 40px;
+  }
+}
 @media only screen and (max-width: 374px) {
   .subtitle_sm.p22 {
     font-size: 15.9px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .process-box .p16 {
+    padding-right: 0;
   }
 }
 /* animation */
