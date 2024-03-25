@@ -81,9 +81,14 @@
               <img
                 src="/src/img/contact/redirect.png"
                 alt="marketing thedeep section 5-1"
-                style="width: 100%"
               />
             </a>
+            <p
+              class="p22"
+              style="text-align: center; margin-top: 20px; position: absolute"
+            >
+              모바일의 경우<br />위 버튼을 클릭하세요
+            </p>
           </div>
         </div>
         <div class="box">
@@ -91,24 +96,11 @@
             <img
               src="/src/img/contact/qrcode.png"
               alt="marketing thedeep section 5-1"
-              style="width: 100%"
             />
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="padding-bottom: 60px; margin-top: -60px">
-        <div class="box">
-          <div class="image-container">
-            <p class="p22" style="text-align: center; margin-top: 20px">
-              모바일의 경우<br />위 버튼을 클릭하세요
-            </p>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image-container">
-            <p class="p22" style="text-align: center; margin-top: 20px">
+            <p
+              class="p22"
+              style="text-align: center; margin-top: 20px; position: absolute"
+            >
               휴대폰 카메라로 위 QR코드<br />촬용하면 채널 연결
             </p>
           </div>
@@ -119,7 +111,7 @@
         <img
           src="/src/img/contact/next.png"
           alt="marketing thedeep section 5-1"
-          style="width: 100%; margin-top: 100px"
+          style="width: 100%; margin-top: 160px"
         />
       </div>
 
@@ -209,9 +201,6 @@
         #quotation {
           left: 30%;
         }
-        .image-container.has-divider {
-          position: relative;
-        }
         .image-container.has-divider a::after {
           content: "";
           position: absolute;
@@ -220,6 +209,24 @@
           bottom: 15%;
           width: 1px;
           background-color: #9999;
+        }
+        .image-container img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .image-container img {
+          width: 70%;
+          margin: 0 auto;
+        }
+        .image-container p {
+          width: 100%;
+          display: block;
+        }
+        .image-container:last-child {
+          margin-top: 80px;
         }
       }
 
