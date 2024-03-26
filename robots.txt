@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://isanghan.co.kr/sitemap_index.xml

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://thedeep.kr/</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://thedeep.kr/src/pages/blog_deep_page.html</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeep.kr/src/pages/place_seo_page.html</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeep.kr/src/pages/contact.html</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeep.kr/src/pages/blog_brand_page.html</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thedeep.kr/src/pages/place_exposure_page.html</loc>
+  <lastmod>2024-03-26T03:43:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
