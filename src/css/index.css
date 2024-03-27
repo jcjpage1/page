@@ -1,4 +1,4 @@
-/* #background-video {
+#background-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,7 +6,11 @@
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-} */
+} 
+
+/*
+*/
+
 
 #main_section {
   position: relative;
