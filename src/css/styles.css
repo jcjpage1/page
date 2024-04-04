@@ -134,7 +134,7 @@ section#sub_section {
 }
 
 section#main_footer {
-  min-height: 40vh;
+  min-height: 25vh;
   width: 100%;
   background-image: url("/src/img/main/main_background_3.png");
   background-size: cover;
@@ -150,9 +150,9 @@ section#main_footer {
   align-items: end;
 }
 #main_footer_div .button {
-  padding: 10px 50px;
-  margin-top: 40px;
-  border-radius: 36px;
+  padding: 10px 23px;
+  margin-top: 15px;
+  border-radius: 23px;
   background-color: white;
 }
 #main_footer_div a {
