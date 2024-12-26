@@ -190,7 +190,7 @@ nav > ul li a {
    right: 30px;
    width: 12px;
    height: 8px;
-   background-image: url('/img/interface/down_arrow.png');
+   background-image: url('https://jcjpage1.github.io/page/img/interface/down_arrow.png');
    background-position: center;
    background-repeat: no-repeat;
    background-size: contain;
@@ -274,7 +274,7 @@ section#sub_section {
    text-align: center;
    display: flex;
    overflow: hidden;
-   background-image: url('/img/interface/sub_background.png');
+   background-image: url('https://jcjpage1.github.io/page/img/interface/sub_background.png');
    /* New background image URL */
    background-size: cover;
    background-repeat: no-repeat;
@@ -284,7 +284,7 @@ section#sub_section {
 section#main_footer {
    min-height: 25vh;
    width: 100%;
-   background-image: url('/img/interface/subfooter_background.png');
+   background-image: url('https://jcjpage1.github.io/page/img/interface/subfooter_background.png');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
